@@ -29,3 +29,5 @@ signInWithEmailAndPassword(auth, email.value, pass.value)
   });
 };
 
+const loginBtn = document.querySelector(".login-a")
+loginBtn.addEventListener("click", signIn)

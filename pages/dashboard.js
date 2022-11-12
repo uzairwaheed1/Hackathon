@@ -12,11 +12,7 @@ import {
   setDoc,
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
-import {
-  getAuth,
-  onAuthStateChanged,
-  signOut,
-} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
 
 let classImgBtn = document.querySelector("#cc-img");
 // console.log(classImgBtn)
@@ -45,7 +41,7 @@ window.onload = async () => {
     var classCard = `
     
 
-        <div class="card my-class" style="width: 18rem;">
+        <div class="card my-class" onclick = "getStd()" id="class-card1" style="width: 18rem;">
   <img class="card-img-top" src="../assets/images.jpeg" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title">${doc.data().course_Name} <span>(${doc.data().section_Name})</span></h4>
@@ -60,5 +56,14 @@ window.onload = async () => {
     console.log(doc.id, " => ", doc.data());
   });
 };
+
+const classCard = document.querySelector("#class-card1")
+console.log(classCard)
+
+const getStd = () => {
+  location.href = "show_data.html"
+}
+
+window.getStd = getStd
 
 

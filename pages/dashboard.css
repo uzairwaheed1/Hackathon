@@ -142,7 +142,6 @@ body {
 }
 .dashboard-main {
   height: auto;
-  
 }
 .create-class {
   display: flex;
@@ -247,28 +246,39 @@ input[type="text"] {
   margin-bottom: 4%;
   /* background-color: #292c2f; */
 }
-.class-main-div{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.class-main-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.my-class{
-   cursor: pointer;
+.my-class {
+  cursor: pointer;
 }
 .cc-btn {
-    background-color: #386AD3;
+  background-color: #386ad3;
 }
 
-#course-name,#section, #picture{
-    width: 100%;
-    /* margin-top: 6%; */
-    height: 38px;
+#course-name,
+#section,
+#picture {
+  width: 100%;
+  /* margin-top: 6%; */
+  height: 38px;
 }
-#picture{
+#picture {
   width: 100%;
   margin-top: 2%;
   height: 38px;
 }
 
+.th {
+  width: 40px;
+}
+
+.data-table {
+  width: 95%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}

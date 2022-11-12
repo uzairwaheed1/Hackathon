@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Acme"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css" />
     <title>Document</title>
   </head>
   <body>
@@ -24,36 +35,22 @@
         </nav>
       </div>
     </header>
-    <div class="login">
-      <h2 class="register-heading">Login</h2>
-      <!-- <div class="border-top-login"></div> -->
-      <div class="login-form">
-        <div>
-          <!-- <h3>Login Here</h3> -->
 
-          <label for="username">Username</label>
-          <input type="email" placeholder="Email or Phone" id="login-email" />
+    <div class="show-data-div">
+      <table class="data-table">
+        <tr>
+          <th class="th">Name</th>
+          <th class="th">Father Name</th>
+          <th class="th">Roll no</th>
+          <th class="th">Contact No</th>
+          <th class="th">Cnic No</th>
+          <th class="th">Course</th>
+          <th class="th">Section</th>
+        </tr>
+      </table>
 
-          <label for="password">Password</label>
-          <input type="password" placeholder="Password" id="login-pass" />
-          
-          
-          <button class="login-a">
-            <!-- <a href="" onclick="login1()" class="login-a">Log In</a> -->
-            LogIn
-          </button>
-          
-        </div>
-      </div>
+      
     </div>
-    <!-- <input type="email" placeholder="Email or Phone" id="login-email" />
-    <input type="password" placeholder="Password" id="login-pass" /> -->
-
-
-    <!-- <input type="email" placeholder="Email or Phone" id="login-email" /> -->
-    <!-- <input type="password" placeholder="Password" id="login-pass" /> -->
-    <!-- <button class="login-a">Login In</button> -->
-
 
     <script type="module">
       // Import the functions you need from the SDKs you need
@@ -78,6 +75,7 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-    <script src="app.js" type="module"></script>
+
+    <script src="show_data.js" type="module"></script>
   </body>
 </html>
