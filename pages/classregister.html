@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Acme"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-fixed">
+      <div class="header-limiter">
+        <h1>
+          <a href="#">Sylani<span>App</span></a>
+        </h1>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#" class="selected">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="form">
+      <div class="cr-main">
+        <h1>Create class</h1>
+        <!-- <div class="input-r1">
+          <div class="col-3 input-effect">
+            <label>Class timings</label>
+            <input class="effect-17" type="text" placeholder="First name" />
+            <span class="focus-border"></span>
+          </div>
+
+          <div class="col-3 input-effect">
+            <label>Schedule of classes</label>
+            <input class="effect-17" type="text" placeholder="First name" />
+            <span class="focus-border"></span>
+          </div>
+        </div> -->
+
+        <div class="input-r1">
+          <div class="col-3 input-effect">
+            <label>Teacher’s name</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="teacher-name"
+            />
+            <span class="focus-border"></span>
+          </div>
+
+          <div class="col-3 input-effect">
+            <label>Section name.</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="section-name"
+            />
+            <span class="focus-border"></span>
+          </div>
+        </div>
+
+        <div class="input-r1">
+          <div class="col-3 input-effect">
+            <label>Course Name</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="course-name"
+            />
+            <span class="focus-border"></span>
+          </div>
+
+          <div class="col-3 input-effect">
+            <label>Batch Number</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="batch-no"
+            />
+            <span class="focus-border"></span>
+          </div>
+        </div>
+        <div class="input-r1">
+          <div class="col-3 input-effect">
+            <label>Schedule of classes</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="schedule"
+            />
+            <span class="focus-border"></span>
+          </div>
+          <div class="col-3 input-effect">
+            <label>Class timings</label>
+            <input
+              class="effect-17"
+              type="text"
+              placeholder="First name"
+              id="class-timings"
+            />
+            <span class="focus-border"></span>
+          </div>
+        </div>
+        <!-- <div class="cc-btn"> -->
+        <button class="cc-btn">Create class</button>
+        <!-- </div> -->
+      </div>
+    </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBhM6xacIQ9xag7ltxv7K60s7lnPzLfDkI",
+        authDomain: "sylani-ea1ef.firebaseapp.com",
+        projectId: "sylani-ea1ef",
+        storageBucket: "sylani-ea1ef.appspot.com",
+        messagingSenderId: "338500870736",
+        appId: "1:338500870736:web:8574e6ba9f3a501392e755",
+        measurementId: "G-HZXPLLZ9E7",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script src="classregister.js" type="module"></script>
+  </body>
+</html>

@@ -9,12 +9,18 @@ const signIn = () => {
   console.log(email)
 
   const auth = getAuth();
-  console.log(auth)
+
 signInWithEmailAndPassword(auth, email.value, pass.value)
   .then((userCredential) => {
     // Signed in 
-    const user = auth.currentUser
+    const user = userCredential.user;
     console.log(user)
+
+    location.href = "pages/dashboard.html"
+
+
+
+
     // ...
   })
   .catch((error) => {
@@ -23,5 +29,3 @@ signInWithEmailAndPassword(auth, email.value, pass.value)
   });
 };
 
-const signInBtn = document.querySelector(".login-a")
-signInBtn.addEventListener("click", signIn)

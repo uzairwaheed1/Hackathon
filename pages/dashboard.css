@@ -1,0 +1,274 @@
+.dashboard {
+  background-color: #f4f4f4;
+}
+.header-fixed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px #ccc;
+  padding: 20px 40px;
+  height: 80px;
+  color: #ffffff;
+  box-sizing: border-box;
+  top: -100px;
+
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.header-fixed .header-limiter {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder {
+  height: 80px;
+  display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+  float: left;
+  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+  color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+  font: 16px Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  float: right;
+}
+
+.header-fixed .header-limiter nav a {
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover {
+  opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+  color: #608bd2;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+  padding: 10px 40px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+  display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+  line-height: 28px;
+  font-size: 13px;
+}
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+  .header-fixed {
+    padding: 20px 0;
+    height: 75px;
+  }
+
+  .header-fixed .header-limiter h1 {
+    float: none;
+    margin: -8px 0 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .header-fixed .header-limiter nav {
+    line-height: 1;
+    float: none;
+  }
+
+  .header-fixed .header-limiter nav a {
+    font-size: 13px;
+  }
+
+  body.fixed .header-fixed {
+    display: none;
+  }
+}
+
+/*
+	 We are clearing the body's margin and padding, so that the header fits properly.
+	 We are also adding a height to demonstrate the scrolling behavior. You can remove
+	 these styles.
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  /* height: 1500px; */
+}
+.dashboard-main {
+  height: auto;
+  
+}
+.create-class {
+  display: flex;
+  justify-content: space-evenly;
+}
+.create-class > img {
+  width: 21%;
+  cursor: pointer;
+}
+
+.form {
+  /* width: 88%;
+    margin: 0 auto; */
+}
+.cr-main {
+  font-family: Acme;
+
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* input field  */
+:focus {
+  outline: none;
+}
+.col-3 {
+  float: left;
+  width: 41.33%;
+  /* margin: 40px 3%; */
+  position: relative;
+  margin-top: 2%;
+} /* necessary to give position: relative to parent. */
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  border: none;
+  border: rgba(0, 0, 0, 0.4) solid 1px;
+  transition: 6s;
+  height: 38px;
+}
+
+.effect-17 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #315bbe;
+  transition: 0.4s;
+}
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+.effect-17 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-17:focus ~ label,
+.has-content.effect-17 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #e61d2b;
+  transition: 0.3s;
+}
+.col-3 label {
+  font-size: 18px;
+}
+
+.input-r1 {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  margin-bottom: 2%;
+}
+.time-class {
+  display: flex;
+  /* height: 25px; */
+  align-items: center;
+}
+
+/* classes  */
+
+.classes {
+  width: 90%;
+  height: 100%;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+  /* background-color: #292c2f; */
+}
+.class-main-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.my-class{
+   cursor: pointer;
+}
+.cc-btn {
+    background-color: #386AD3;
+}
+
+#course-name,#section, #picture{
+    width: 100%;
+    /* margin-top: 6%; */
+    height: 38px;
+}
+#picture{
+  width: 100%;
+  margin-top: 2%;
+  height: 38px;
+}
+
