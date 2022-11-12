@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+  }
+  body {
+    /* background: #9053c7;
+      background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=740&t=st=1660394590~exp=1660395190~hmac=c878727e73efc378d53291f03357d54da2f8a4c6f522f83465d4a7925c0728c1);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  .main-login {
+    width: 58%;
+    height: 499px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-left: 271px;
+    margin-top: 67px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .register {
+    height: 499px;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 50%;
+    display: inline-block;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid rgb(128, 128, 128, 0.5);
+  }
+  .login {
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .register-heading {
+    margin: 0 auto;
+    font-family: system-ui;
+    /* margin-left: 140px; */
+    margin-top: 48px;
+    font-size: 35px;
+    padding-top: 30px;
+    width: 13%;
+  }
+  
+  .border-top {
+    border-top: 2px solid rgb(128, 128, 128, 0.4);
+    width: 33%;
+    margin-left: 129px;
+    margin-top: 6px;
+  }
+  .border-top-login {
+    border-top: 2px solid rgb(128, 128, 128, 0.4);
+    width: 33%;
+    margin-left: 117px;
+    margin-top: 6px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  input {
+    height: 39px;
+    width: 100%;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.4);
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+  input:focus {
+    border-bottom: 1px solid black;
+  }
+  button {
+    display: block;
+    height: 47px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: aliceblue;
+    color: white;
+    border: none;
+  }
+  button:hover {
+    background-color: #57b846;
+  }
+  .login-form > form {
+    margin: 0 auto;
+    width: 81%;
+  }
+  .login-form{
+    padding-bottom: 7%;
+  }
+
+.login-a{
+    text-decoration: none;
+    color: black;
+}  
+
+ 
